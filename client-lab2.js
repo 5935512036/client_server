@@ -5,7 +5,7 @@ var PORT = 6969;
 
 var client = new net.Socket();
 client.connect(PORT, HOST, () => {
-    client.write('usman 5935512036')
+    client.write('5935512036')
 })
 
 
