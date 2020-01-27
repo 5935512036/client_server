@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>PK SHOP</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="line.css" rel="stylesheet" type="/line.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <style>
+    p.serif {
+      font-family: 'Michroma','THMaliGrade6Regular', serif; 
+      font-size: 30px;
+    }
+    .navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 0px;
+    border: 1px solid transparent;
+    }
+    .navbar-brand {
+     display: inline-block;
+     padding-top: 5px;
+     padding-right: 30px;
+     padding-bottom: 25px;
+     padding-left: 20px;
+     margin-right: 0rem;
+     font-size: 25px;
+    }
+    .nav-link {
+    color: rgba(0,0,0,.9);
+    font-size: 15px;
+    }
+    .price {
+    color: #f50;
+    font-size: 20px;
+    margin-left: 2%;
+    margin-right: 15%;
+    
+    }
+    .amount{
+      padding: 5%;
+      font-size: 20px;
+    }
+    .h1, .h2, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-bottom: .5rem;
+    font-weight: 1000;
+    line-height: 1.2;
+    }
+    .text-center{
+      font-size: 20px;
+
+    }
+
+  
+            
+    
+    </style>
+</head>
+
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">PK SHOP</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            หมวด
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">อุปกรณ์การเกษตร</a>
+            <a class="dropdown-item" href="#">เมล็ดพันธุ์</a>
+            <a class="dropdown-item" href="#">ปุ๋ย</a>
+          </div>
+        </li>
+
+        <li class="nav-item active">
+          <a class="nav-link" href="#">หน้าแรก <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">ช่วยเหลือ <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">ติดตามสินค้า <span class="sr-only">(current)</span></a>
+        </li>
+
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+  
+
+<div class="jumbotron text-center">
+  <h1>WELCOME TO PK SHOP</h1>
+  <p>แหล่งรวมสินค้าการเกษตรออนไลน์อันดับ 1</p> 
+</div>
+  
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <h3 class="text-center">เครื่องตัดหญ้า</h3>
+      <img src="https://www.homemegamart.com/wp-content/uploads/2018/12/ITM0038919.jpg" class="img-responsive" alt="Cinque Terre" width="304" height="236">
+      
+      <span class="price">฿2,799.00</span>
+      <button type="button" class="btn btn-primary" onclick="add('amount1')">
+        <span id="count">เพิ่ม</span>
+      </button>
+      <span id='amount1' class="amount">1</span>
+      <button type="button" class="btn btn-danger" onclick="Decrease('amount1')">
+        <span id="down">ลด</span>
+      </button>
+      <button type="button" class="btn btn-warning">ซื้อเลย</button>
+      <p class="serif" >รายละเอียด</p>
+      <p>ชนิดเครื่องยนต์  เครื่องยนต์เบนซิน 2 จังหวะ</p>
+      <p>ปริมาตรกระบอกสูบ : 41 ซีซี</p>
+      <p>กำลังเครื่องยนต์ : 2 แรงม้า </p>
+      <p>ปริมาตรความจุถังน้ำมัน : 1.1 ลิตร</p>
+      <p>ความเร็วรอบเครื่องยนต์ : 8000 รอบ</p> 
+      <p>ความถี่เฟือง : 9 ฟัน</p>
+      <p>ขนาดก้าน : 28 มิลลิเมตร</p> 
+      <p>น้ำหนัก : 8.5 กิโลกรัม</p>
+    </div>
+
+
+    <div class="col-sm-4">
+      <h3 class="text-center">เครื่องบ่นยา</h3>
+      <img src="https://inwfile.com/s-gf/hsjvwk.png" class="img-responsive" alt="Cinque Terre" width="304" height="236">
+      <span class="price">฿1,799.00</span>
+      <button type="button" class="btn btn-primary" onclick="add('amount2')">
+        <span>เพิ่ม</span>
+      </button>
+      <span id='amount2' class="amount">1</span>
+      <button type="button" class="btn btn-danger" onclick="Decrease('amount2')">
+        <span id="down">ลด</span>
+      </button>
+      <button type="button" class="btn btn-warning">ซื้อเลย</button>
+      <p class="serif" >รายละเอียด</p>
+      <p>ลูกสูบ 1x18x8 mm.</p>
+      <p>กำลัง 1100W (1.2HP)</p>
+      <p>ปริมาณ 6-7 ลิตร/นาที</p>
+      <p>น้ำมัน เบนซิน 95 , แก๊สโซฮอลล์ 91 / 95</p>
+      <p>น้ำหนัก 10.80 กก.</p> 
+      <p>ขนาด 360x340x610 มม.</p>
+      <p>ซีซี 26 cc.</p> 
+      <p>MODEL ZB-OS-767-25L</p>
+      
+    </div>
+
+
+    <div class="col-sm-4">
+      <h3 class="text-center">พลั่ว</h3>     
+      <img src="https://sc02.alicdn.com/kf/UTB8OCvBsVfFXKJk43Otq6xIPFXax/Made-in-Japanese-brand-elephant-shovels-spades.jpg_350x350.jpg" class="img-responsive" alt="Cinque Terre" width="304" height="236">   
+      <span class="price">฿299.00</span>
+      <button type="button" class="btn btn-primary" onclick="add('amount3')">
+        <span>เพิ่ม</span>
+      </button>
+      <!-- <input type="text" class="text"> -->
+      <span id='amount3' class="amount">1</span>
+      <button type="button" class="btn btn-danger" onclick="Decrease('amount3')">
+        <span>ลด<span>
+      </button>
+      <button type="button" class="btn btn-warning">ซื้อเลย</button>
+      <p class="serif" >รายละเอียด</p>
+      <p>อุปกรณ์ทำเกษตรและงานสาน แข้งแรง ทนทาน ใช้งานได้ยาวนาน</p>
+      <p>ปลายตัด ตัว Y</p>
+    </div>
+
+
+  </div>
+</div>
+
+<script>
+
+function add(id) {
+  let currentAmount = +document.getElementById(id).innerHTML;
+  document.getElementById(id).innerHTML = currentAmount + 1;
+}
+
+function Decrease(id) {
+  let currentAmount = +document.getElementById(id).innerHTML;
+  document.getElementById(id).innerHTML = currentAmount - 1;
+}
+
+
+
+</script>
+
+
+
+</body>
+</html>
